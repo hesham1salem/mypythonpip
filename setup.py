@@ -4,10 +4,6 @@ setup(
     name="my_project",
     version="0.1.0",
     packages=find_packages(),
-    install_requires=[
-        "some_dependency>=1.0",
-        "another_dependency==2.1"
-    ],
     entry_points={
         "console_scripts": [
             "my_command=my_project.main:main_function",
