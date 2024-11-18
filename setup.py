@@ -3,12 +3,12 @@ from setuptools import setup, find_packages
 setup(
     name="my_project",
     version="0.1.0",
-    packages=find_packages(),
-    entry_points={
-        "console_scripts": [
-            "my_command=my_project.main:main_function",
-        ],
-    },
+  #  entry_points={
+   #     "console_scripts": [
+    #        "my_command=my_project.main:main_function",
+     #   ],
+    #},
+        scripts=["hello.sh"],  # Specify the binary to install
     description="A brief description of your project",
     author="Your Name",
     author_email="your.email@example.com",
@@ -20,3 +20,6 @@ setup(
     ],
     python_requires=">=3.6",
 )
+
+setup(
+  
